@@ -4,7 +4,6 @@
 
 ## Build Setup
 
-``` bash
 # 下载依赖
 npm install
 
