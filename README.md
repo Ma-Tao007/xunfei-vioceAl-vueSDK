@@ -1,21 +1,20 @@
 # xunfei-vioce-demo
 
-> A Vue.js project
+> 一个基于科大讯飞语音识别接口的vue案例
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 下载依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 运行项目
 npm run dev
 
-# build for production with minification
-npm run build
+# 运行说明
+1.电脑要能支持语音录入（台式机没有外设的需要插入耳机，不然无法运行）
+2.案例中使用的科大讯飞接口控制台的参数修改成自己的参数使用，在src/assets/js/IatRecorder.js中的前三个参数设置为对应
+你自己应用的参数
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 效果截图
+![image](https://github.com/Ma-Tao007/xunfei-vioceAl-vueSDK/blob/master/static/image/run.png)
