@@ -1,7 +1,7 @@
 
-const APPID = '5f27b6a9'
-const API_SECRET = 'dc4b075906e8c163ca0416006d296b36'
-const API_KEY = '6b09fc3284f2788d68679a8e6c85b6eb'
+const APPID = ''
+const API_SECRET = ''
+const API_KEY = ''
 import CryptoJS from 'crypto-js'
 import Worker from './transcode.worker.js'
 const transWorker = new Worker()
@@ -46,7 +46,7 @@ const IatRecorder = class  {
         self.audioData.push(...event.data)
       }
     }
-    
+
     // 修改录音听写状态
     setStatus(status) {
       this.onWillStatusChange && this.status !== status && this.onWillStatusChange(this.status, status)
@@ -103,7 +103,7 @@ const IatRecorder = class  {
         navigator.webkitGetUserMedia ||
         navigator.mozGetUserMedia ||
         navigator.msGetUserMedia
-      
+
       // 创建音频环境
       try {
         this.audioContext = new (window.AudioContext || window.webkitAudioContext)()
@@ -118,7 +118,7 @@ const IatRecorder = class  {
           return
         }
       }
-      
+
       // 获取浏览器录音权限
       if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices
@@ -172,7 +172,7 @@ const IatRecorder = class  {
         this.scriptProcessor.connect(this.audioContext.destination)
         this.connectWebSocket()
       }
-  
+
       let getMediaFail = (e) => {
         this.audioContext && this.audioContext.close()
         this.audioContext = undefined
@@ -327,4 +327,4 @@ const IatRecorder = class  {
     }
   }
 
-  export default IatRecorder  
+  export default IatRecorder
