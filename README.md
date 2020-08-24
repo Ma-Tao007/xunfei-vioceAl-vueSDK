@@ -1,6 +1,6 @@
 # xunfei-vioce-demo
 
-> 一个基于科大讯飞语音识别接口的vue案例
+> 一个基于科大讯飞语音识别接口的vue案例[java版本案例]（https://github.com/Ma-Tao007/xunfei-vioceAl-javaSDK）
 
 ## Build Setup
 
