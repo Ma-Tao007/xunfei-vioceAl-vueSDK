@@ -8,7 +8,7 @@
 npm install
 
 # 运行项目
-npm run dev
+npm run dev(如果报错请使用yarn run serve运行)
 
 # 运行说明
 1.电脑要能支持语音录入（台式机没有外设的需要插入耳机，不然无法运行）<br>
